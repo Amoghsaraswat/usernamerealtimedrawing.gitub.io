@@ -18,10 +18,11 @@ function modelLoaded() {
 
 function draw() {
     background("white");
-    document.getElementById("square").innerHTML="width and height of a square will be "+difference+"px";
     fill("red");
     stroke("red");
-    square(noseX,noseY,difference);
+    textSize(difference);
+    
+    text("MASTER OF EVIL AMOGH",noseX,noseY);
 }
 
 function gotPoses(results) {
